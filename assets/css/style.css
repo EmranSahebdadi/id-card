@@ -1,0 +1,125 @@
+@font-face {
+  font-family: peyda;
+  src: url(../font/woff/PeydaWeb-Regular.woff) format(woff);
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  direction: rtl;
+  font-family: peyda;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.frame {
+  width: 90%;
+  padding: 3rem;
+  /* background-color: coral;    */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.5rem;
+}
+.file-section {
+}
+.info-box {
+  background-color: #f9fafb;
+  display: flex;
+  justify-content: space-between;
+}
+.info {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.card-img {
+  height: 11rem;
+  overflow: hidden;
+}
+.btn {
+  position: relative;
+  cursor: pointer;
+  border: none;
+}
+.btn:hover {
+}
+.ul {
+  width: 4.2rem;
+  height: 3.5rem;
+  position: absolute;
+  background-color: lightblue;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 0.7rem;
+
+  /* display: none; */
+}
+.li {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.edit {
+  font-size: 0.8rem;
+}
+
+.dropdown {
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+}
+
+.dropdown__trigger {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.dropdown:hover .dropdown__menu {
+  display: block;
+}
+
+.dropdown__menu {
+  display: none;
+  position: absolute;
+  min-width: 10rem;
+  padding-inline: 0.75rem;
+  top: -6.5rem;
+  left: -1rem;
+  list-style: none;
+  border-radius: 0.75rem;
+  background-color: #f9fafb;
+}
+
+.dropdown__menu-item {
+  gap: 0.5rem;
+  width: 100%;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  padding-block: 0.75rem;
+}
+
+.dropdown__menu-item:not(:last-child) {
+  border-bottom: 1px solid #e2edff;
+}
+
+.dropdown__menu-label {
+  color: var(--Black-black-100, #c3c5c9);
+  text-align: right;
+
+  font-family: Peyda;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+ul li:last-child {
+  color: #eb482b;
+}
